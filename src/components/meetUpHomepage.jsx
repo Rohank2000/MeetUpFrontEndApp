@@ -28,7 +28,7 @@ const HomePage = ({ searchTerm = "" }) => {
                     <div className="text-center">
                         <div className="row justify-content-between">
                             <div className="col-3">
-                                <h1>MeetUp Events</h1>
+                                <h2>MeetUp Events</h2>
                             </div>
                             <div className="col-3">
                                 <div>

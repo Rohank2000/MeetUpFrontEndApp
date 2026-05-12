@@ -60,7 +60,7 @@ const EventListDetails = () => {
                         <div className="col-4">
 
 
-                            <div class="card mb-4" style={{ width: '26rem' }}>
+                            <div class="card mb-4" style={{ width: '22rem' }}>
                                 <div class="card-body">
                                     <p><strong>🕗 {Date} at {Time}</strong></p>
                                     <p><strong>📍{eventFind.location}</strong></p>
@@ -71,7 +71,7 @@ const EventListDetails = () => {
                                 <h3>Speakers : ({speakerCount})</h3>
                             </div>
                             <div>
-                                <div class="card text-center mt-4" style={{ width: '12rem' }}>
+                                <div class="card text-center mt-4" style={{ width: '11rem' }}>
                                     <div class="card-body">
                                         <img src={eventFind.speakerImage} alt={eventFind.speakerName} className="img-fluid rounded-circle mb-2" />
                                         <p><strong>{eventFind.speakerName}</strong></p>
