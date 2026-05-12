@@ -39,7 +39,7 @@ const EventListDetails = () => {
             <main className="container py-4">
                 <div>
                     <div className="row justify-content-between">
-                        <div className="col-sm-6">
+                        <div className="col-sm-5">
 
                             <h2>{eventFind.title}</h2>
                             <p><span>Hosted by : </span>
