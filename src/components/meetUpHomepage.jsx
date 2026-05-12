@@ -61,7 +61,7 @@ const HomePage = ({ searchTerm = "" }) => {
                                 return (
                                     <div key={index} className="col-4  my-4">
                                         <Link to={`/eventList/${index}`}>
-                                            <div className="card h-100" style={{ width: '26rem' }}>
+                                            <div className="card h-100" style={{ width: '22rem' }}>
                                                 <img
                                                     src={meet.eventThumbnail}
                                                     className="card-img-top"
