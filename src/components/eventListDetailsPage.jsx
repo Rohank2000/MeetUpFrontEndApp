@@ -39,7 +39,7 @@ const EventListDetails = () => {
             <main className="container py-4">
                 <div>
                     <div className="row justify-content-between">
-                        <div className="col-4">
+                        <div className="col-sm-6">
 
                             <h2>{eventFind.title}</h2>
                             <p><span>Hosted by : </span>
@@ -57,10 +57,10 @@ const EventListDetails = () => {
 
 
                         </div>
-                        <div className="col-4">
+                        <div className="col-sm-4">
 
 
-                            <div class="card mb-4" style={{ width: '22rem' }}>
+                            <div class="card mb-4 w-100 mb-4" style={{ width: '22rem' }}>
                                 <div class="card-body">
                                     <p><strong>🕗 {Date} at {Time}</strong></p>
                                     <p><strong>📍{eventFind.location}</strong></p>

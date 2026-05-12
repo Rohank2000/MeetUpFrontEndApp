@@ -18,7 +18,18 @@ const HomePage = ({ searchTerm = "" }) => {
         filteredData = select ? data?.GetAllMeetUpData.filter((meet) => meet.eventType === select) : data?.GetAllMeetUpData;
 
     } else {
-        filteredData = data?.GetAllMeetUpData.filter((meet) => meet.title.includes(searchTerm) || meet.title.includes(searchTerm));
+        const Search = (searchTerm || "").trim().toLowerCase();
+
+        filteredData = data?.GetAllMeetUpData.filter((meet) => {
+            if (!meet) {
+                return false;
+            }
+
+            const title = (meet.title || "").toLowerCase();      
+            const tags = Array.isArray(meet.eventTags) ? (meet.eventTags || []).join(" ").toLowerCase() : (meet.eventTags || "").toString().toLowerCase(); 
+
+            return (title.includes(Search) || tags.includes(Search));
+        });
     }
 
     return (
@@ -59,12 +70,12 @@ const HomePage = ({ searchTerm = "" }) => {
                                 const Date = formatInTimeZone(rawDate, 'UTC', 'PPPP');
                                 const Time = formatInTimeZone(rawDate, 'UTC', 'p');
                                 return (
-                                    <div key={index} className="col-4  my-4">
+                                    <div key={index} className="col-12 col-sm-6 col-md-4 my-4">
                                         <Link to={`/eventList/${index}`}>
-                                            <div className="card h-100" style={{ width: '22rem' }}>
+                                            <div className="card h-100 w-100" style={{ width: '22rem' }}>
                                                 <img
                                                     src={meet.eventThumbnail}
-                                                    className="card-img-top"
+                                                    className="card-img-top img-fluid"
                                                     alt={meet.title}
                                                 />
                                                 <button type="button" className="btn btn-primary py-1 m-2" style={{ width: '6rem' }}><strong>{meet.eventType === "off" ? "OffLine" : "OnLine"}</strong></button>
