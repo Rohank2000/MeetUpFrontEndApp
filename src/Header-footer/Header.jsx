@@ -21,7 +21,7 @@ const Header = ({ setSearchTerm }) => {
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               <img
-                src="https://file.notion.so/f/f/328c658f-5919-40c2-9e33-855623c60774/02dbc16a-1127-48a5-8e0f-28027152e8a2/image.png?table=block&id=35beefa4-ee96-80bc-a02f-c6277c016fa4&spaceId=328c658f-5919-40c2-9e33-855623c60774&expirationTimestamp=1778371200000&signature=cA5s6G-uZh1zOJ3jKouWyj2xtNnLEqtZttTqMPSRcI8&downloadName=image.png"
+                src="https://i.ibb.co/CpbPkSCZ/4e9e880f-b27a-4190-b170-6f8a2c4fd265.jpg"
                 alt="Logo"
                 style={{ height: 60 }}
               />
